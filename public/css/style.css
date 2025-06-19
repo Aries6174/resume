@@ -1,0 +1,331 @@
+body {
+    background-color: rgb(10, 10, 10);
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Remove the background image and its related styles */
+body::before {
+    display: none;
+}
+
+/* Text colors */
+h1, h2, h3, h4, h5, h6, p, span, div {
+    color: #ffffff !important;
+}
+
+.text-muted {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.text-primary {
+    color: #58a6ff !important;
+}
+
+.text-success {
+    color: #4fd1c5 !important;
+}
+
+a {
+    color: #58a6ff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ff58a6;
+    text-decoration: none;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, span {
+    color: #ffffff;
+}
+
+.bg-dark-transparent {
+    background-color: rgba(18, 18, 18, 0.95) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.navbar-brand {
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff !important;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.card {
+    margin-bottom: 1rem;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.h3 {
+    background: none;
+    padding: 0;
+    border-left: none;
+    margin-bottom: 1.5rem;
+}
+
+.h3:after {
+    display: none;
+}
+
+.lead {
+    font-weight: 400;
+    line-height: 1.8;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    font-size: 0.95rem;
+    padding: 0.5rem;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-item i {
+    font-size: 1.1rem;
+    width: 24px;
+}
+
+.contact-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.progress {
+    height: 8px;
+    border-radius: 4px;
+}
+
+.progress-bar {
+    transition: width 1s ease;
+}
+
+.progress-gradient {
+    background: linear-gradient(45deg, #58a6ff, #ff58a6);
+}
+
+/* Dark theme specific */
+:root {
+    color-scheme: dark;
+}
+
+.feature-card {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.feature-icon {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #58a6ff;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover .feature-icon {
+    transform: scale(1.2);
+}
+
+/* Chart customization */
+#expertiseChart {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.hover-effect {
+    transition: transform 0.2s ease;
+}
+
+.hover-effect:hover {
+    transform: translateX(10px);
+}
+
+.experience-item {
+    position: relative;
+    padding: 0 0 0 20px;
+    border-left: 2px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.experience-item:hover {
+    border-left-color: #58a6ff;
+}
+
+.experience-item::before {
+    content: '';
+    position: absolute;
+    left: -6px;
+    top: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #58a6ff;
+    transition: all 0.3s ease;
+}
+
+.experience-item:hover::before {
+    background: #ff58a6;
+    box-shadow: 0 0 10px rgba(255, 88, 166, 0.5);
+}
+
+.experience-item .text-primary {
+    background: linear-gradient(45deg, #58a6ff, #ff58a6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text-muted.small {
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
+
+.card-body a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.card-body a:hover {
+    color: #58a6ff;
+    transition: color 0.3s ease;
+}
+
+.card-body .bi {
+    background: linear-gradient(45deg, #58a6ff, #ff58a6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.2rem;
+    margin-right: 5px;
+}
+
+/* Remove profile section box styles */
+.profile-section {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.profile-section .lead {
+    font-size: 1.2rem;
+    line-height: 1.9;
+    color: rgba(255, 255, 255, 0.95);
+    margin-top: 1rem;
+}
+
+/* Just keeping general section styling */
+section h2 {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+}
+
+section h2:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(45deg, #58a6ff, #ff58a6);
+}
+
+.card-body h2.h3 {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px;
+    color: #58a6ff;
+    text-shadow: 0 0 10px rgba(88, 166, 255, 0.5);
+}
+
+.card-body h2.h3::after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(45deg, #58a6ff, #ff58a6);
+    border-radius: 2px;
+}
+
+.card-body h3.h5 {
+    color: #a6ff58;
+    text-shadow: 0 0 10px rgba(166, 255, 88, 0.5);
+}
+
+.card-body h4.h6 {
+    text-shadow: 0 0 10px rgba(255, 88, 166, 0.5);
+}
+
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: rgb(10, 10, 10);
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+}
+
+/* Card height matching styles */
+.experience-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.experience-wrapper .card:first-child {
+    flex: 1;
+    margin-bottom: 1rem;
+}
+
+.experience-wrapper .card:last-child {
+    margin-bottom: 0;
+}
+
+/* Glowing headings for specific sections only */
+.card-body h2.h3[data-glow] {
+    color: #58a6ff;
+    text-shadow: 0 0 10px rgba(88, 166, 255, 0.5);
+}
+
+/* Category-specific glowing headings */
+.card-body h2[data-glow].contact-glow {
+    color: #58a6ff;
+    text-shadow: 0 0 15px rgba(88, 166, 255, 0.8);
+}
+
+.card-body h2[data-glow].expertise-glow {
+    color: #a6ff58;
+    text-shadow: 0 0 15px rgba(166, 255, 88, 0.8);
+}
+
+.card-body h2[data-glow].languages-glow {
+    color: #ff58a6;
+    text-shadow: 0 0 15px rgba(255, 88, 166, 0.8);
+}
+
+.card-body h2[data-glow].work-glow {
+    color: #ffa658;
+    text-shadow: 0 0 15px rgba(255, 166, 88, 0.8);
+}
+
+.card-body h2[data-glow].education-glow {
+    color: #58ffff;
+    text-shadow: 0 0 15px rgba(88, 255, 255, 0.8);
+}

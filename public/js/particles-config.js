@@ -1,0 +1,74 @@
+particlesJS("particles-js", {
+  particles: {
+    number: { 
+      value: 300,
+      density: { enable: true, value_area: 800 }
+    },
+    color: {
+      value: ["#58a6ff", "#ff58a6", "#a6ff58", "#ffa658"],
+      gradient: {
+        enable: true,
+        type: "random"
+      }
+    },
+    shape: {
+      type: ["circle", "triangle"],
+      stroke: { width: 0 },
+    },
+    opacity: {
+      value: { min: 0.2, max: 0.8 },
+      random: true,
+      animation: {
+        enable: true,
+        speed: 1,
+        minimumValue: 0.1,
+        sync: false
+      }
+    },
+    size: {
+      value: 3,
+      random: true,
+      anim: {
+        enable: true,
+        speed: 2,
+        size_min: 0.3,
+        size_max: 8,
+        sync: false
+      }
+    },
+    line_linked: {
+      enable: true,
+      distance: 150,
+      color: {
+        value: ["#58a6ff", "#ff58a6"],
+        gradient: {
+          enable: true,
+          type: "horizontal"
+        }
+      },
+      opacity: {
+        value: { min: 0.2, max: 0.6 },
+        random: true
+      },
+      width: 1
+    },
+    move: {
+      enable: true,
+      speed: 2,
+      direction: "none",
+      random: true,
+      straight: false,
+      out_mode: "out",
+      bounce: false,
+    }
+  },
+  interactivity: {
+    detect_on: "canvas",
+    events: {
+      onhover: { enable: true, mode: "repulse" },
+      onclick: { enable: true, mode: "push" },
+      resize: true
+    }
+  },
+  retina_detect: true
+});

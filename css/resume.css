@@ -1,0 +1,43 @@
+/* Reset default margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Import Bulma */
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+
+/* Custom styles */
+.resume-container {
+    padding: 2rem;
+}
+
+.profile-section {
+    margin-bottom: 2rem;
+}
+
+.skills-section {
+    margin: 2rem 0;
+}
+
+.experience-section {
+    margin: 2rem 0;
+}
+
+.education-section {
+    margin: 2rem 0;
+}
+
+/* Progress bar styles */
+.progress {
+    height: 8px !important;
+    background-color: #1a1a1a !important;
+    border-radius: 4px !important;
+}
+
+.progress .progress-bar {
+    background-image: var(--gradient) !important;
+    border-radius: 4px !important;
+    transition: all 0.3s ease !important;
+}

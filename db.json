@@ -1,0 +1,140 @@
+{
+    "profile": {
+        "name": "Adrian Joel Jaspa",
+        "title": "Bachelor of Computer Science | Game Developer | 3D Artist",
+        "summary": "Passionate game developer and 3D artist with experience in creating immersive digital experiences...",
+        "photo": "photos\/profile\/profile.jpg"
+    },
+    "contact": {
+        "phone": "09063491021",
+        "email": "Joel.Adrian6174@gmail.com",
+        "github": "https:\/\/github.com\/Aries6174",
+        "linkedin": "https:\/\/www.linkedin.com\/in\/adrian-joel-jaspa-416a711b6\/",
+        "facebook": "https:\/\/www.facebook.com\/adrianjoel.jaspa",
+        "address": "Elvicor Bldg. Tacas, Jaro, Iloilo City"
+    },
+    "expertise": {
+        "data": [
+            {
+                "skill": "Front-end",
+                "value": 80
+            },
+            {
+                "skill": "Back-end",
+                "value": 55
+            },
+            {
+                "skill": "Documentation",
+                "value": 70
+            },
+            {
+                "skill": "Manager",
+                "value": 40
+            },
+            {
+                "skill": "Tester",
+                "value": 60
+            }
+        ],
+        "maxValue": 100,
+        "avgValue": 61
+    },
+    "languages": {
+        "Python": {
+            "level": 80,
+            "colors": [
+                "#366C9C",
+                "#FFD847"
+            ]
+        },
+        "JavaScript": {
+            "level": 65,
+            "colors": [
+                "#F0DB4F",
+                "#F7DF1E"
+            ]
+        },
+        "Java": {
+            "level": 70,
+            "colors": [
+                "#E76F00",
+                "#5382A1"
+            ]
+        },
+        "PHP": {
+            "level": 90,
+            "colors": [
+                "#8993BE",
+                "#232531"
+            ]
+        },
+        "C Sharp": {
+            "level": 80,
+            "colors": [
+                "#9B4F96",
+                "#68217A"
+            ]
+        }
+    },
+    "experience": [
+        {
+            "title": "CTO",
+            "company": "Tagpuan",
+            "period": "2025",
+            "description": "Contract Farming Application for Farmers",
+            "details": "Pitched to YFC of the Department of Agriculture"
+        }
+    ],
+    "education": [
+        {
+            "degree": "Bachelor of Science in Computer Science",
+            "school": "University of Example",
+            "period": "2021-2025",
+            "honors": "Cum Laude"
+        }
+    ],
+    "skills": {
+        "Game Development": [
+            "Unity3D",
+            "Unreal Engine",
+            "Game Design"
+        ],
+        "3D & Design": [
+            "3D Modeling",
+            "UI\/UX Design"
+        ],
+        "Development Tools": [
+            "Git",
+            "Agile\/Scrum",
+            "Test Driven Dev",
+            "React"
+        ]
+    },
+    "certifications": [
+        {
+            "title": "2025 YFC Provincial Level Awardees",
+            "issuer": "Department of Agriculture",
+            "date": "February 2025",
+            "icon": "award"
+        },
+        {
+            "title": "Innovation Challenge Top 13 - Aquachain",
+            "issuer": "Avamos",
+            "date": "March 2025",
+            "details": "Application for fishermen",
+            "icon": "trophy"
+        }
+    ],
+    "otherWorks": {
+        "websites": {
+            "title": "Website Projects",
+            "icon": "globe",
+            "link": "\/websites"
+        },
+        "artworks": {
+            "title": "3D Artworks",
+            "icon": "brush",
+            "link": "\/artworks"
+        }
+    }
+}
