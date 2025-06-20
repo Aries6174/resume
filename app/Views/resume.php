@@ -566,7 +566,7 @@
                     </button>
                     <h2 class="h3 mb-4" data-glow class="expertise-glow">Expertise</h2>
                     <div class="d-flex flex-column justify-content-center align-items-center flex-grow-1">
-                        <div class="chart-container" style="position: relative; height: 275px; width:100%; margin: 0;">
+                        <div class="chart-container" style="position: relative; height: 260px; width:100%; margin: 0;">
                             <canvas id="expertiseChart"></canvas>
                         </div>
                     </div>
@@ -956,7 +956,7 @@
                 throw new Error(errorData.message || `HTTP error! status: ${response.status}`);
             }
 
-            const result = await response.jso   n();
+            const result = await response.json();
             console.log('Save result:', result);  // Debug log
             
             if (!result.success) {
@@ -1053,8 +1053,3 @@
 
 </script>
 </script>
-
-
-
-
-
