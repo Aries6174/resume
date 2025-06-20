@@ -298,8 +298,8 @@
 
     .certification-item {
         display: flex;
-        align-items: flex-start;
-        gap: 1.5rem;
+        align-items: center; /* changed from flex-start to center */
+        gap: 1.2rem; /* slightly reduced gap for better alignment */
         padding: 1rem;
         border-radius: 10px;
         background: rgba(255, 255, 255, 0.05);
@@ -307,9 +307,14 @@
     }
 
     .cert-icon {
-        font-size: 3rem;
+        font-size: 2.2rem; /* slightly smaller for better alignment */
         color: #ffd700;
         transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        min-width: 2.2rem;
     }
 
     .certification-item:hover .cert-icon {
@@ -478,6 +483,12 @@
         border-color: rgba(74, 144, 226, 0.5);
         box-shadow: 0 0 0 0.25rem rgba(74, 144, 226, 0.25);
     }
+
+    /* Remove bottom margin and padding for Expertise card title */
+    .expertise-glow {
+        margin-bottom: 0 !important;
+        padding-bottom: 0 !important;
+    }
 </style>
 
 <div class="particles-container" aria-hidden="true">
@@ -531,7 +542,7 @@
             </div>
             
             <section class="profile-section mt-4 mb-6" aria-label="Profile Summary">
-                <div class="profile-content box has-background-black-ter p-5">
+                <div class="profile-content box has-background-black-ter" style="padding:3px;">
                     <p class="is-size-5 has-text-grey-lighter profile-text"><?= esc($profile) ?></p>
                 </div>
             </section>
@@ -564,9 +575,9 @@
                     <button class="edit-button" title="Edit expertise">
                         <i class="bi bi-pencil-square"></i>
                     </button>
-                    <h2 class="h3 mb-4" data-glow class="expertise-glow">Expertise</h2>
+                    <h2 class="h3 expertise-glow" data-glow style="margin-bottom:0;padding-bottom:0;">Expertise</h2>
                     <div class="d-flex flex-column justify-content-center align-items-center flex-grow-1">
-                        <div class="chart-container" style="position: relative; height: 260px; width:100%; margin: 0;">
+                        <div class="chart-container" style="position: relative; height: 280px; width:100%; margin: 0;">
                             <canvas id="expertiseChart"></canvas>
                         </div>
                     </div>
@@ -666,7 +677,7 @@
                         <div class="cert-icon">
                             <i class="bi bi-award-fill"></i>
                         </div>
-                        <div class="cert-content">
+                        <div class="cert-content d-flex flex-column justify-content-center">
                             <h3 class="cert-title">2025 YFC Provincial Level Awardees</h3>
                             <p class="cert-issuer">Department of Agriculture</p>
                             <p class="cert-date">February 2025</p>
@@ -676,7 +687,7 @@
                         <div class="cert-icon">
                             <i class="bi bi-trophy-fill"></i>
                         </div>
-                        <div class="cert-content">
+                        <div class="cert-content d-flex flex-column justify-content-center">
                             <h3 class="cert-title">Innovation Challenge Top 13 - Aquachain</h3>
                             <p class="cert-issuer">Avamos</p>
                             <p class="small text-muted mb-1">Application for fishermen</p>
@@ -718,6 +729,20 @@
                         <button class="edit-button" title="Edit skills">
                             <i class="bi bi-pencil-square"></i>
                         </button>
+                        <div class="skill-category">
+                            <div class="skill-category-name">Development Tools</div>
+                            <div class="skill-tags">
+                                <div class="skill-tag">Git</div>
+                                <div class="skill-tag">Agile/Scrum</div>
+                                <div class="skill-tag">Test Driven Dev</div>
+                                <div class="skill-tag">React</div>
+                                <div class="skill-tag">Node</div>
+                                <div class="skill-tag">React</div>
+                                <div class="skill-tag">Angular</div>
+                                <div class="skill-tag">Firebase</div>
+                                <div class="skill-tag">Excel</div>    
+                            </div>
+                        </div>
                         <div class="skills-container">
                             <div class="skill-category">
                                 <div class="skill-category-name">Game Development</div>
@@ -732,15 +757,8 @@
                                 <div class="skill-tags">
                                     <div class="skill-tag">3D Modeling</div>
                                     <div class="skill-tag">UI/UX Design</div>
-                                </div>
-                            </div>
-                            <div class="skill-category">
-                                <div class="skill-category-name">Development Tools</div>
-                                <div class="skill-tags">
-                                    <div class="skill-tag">Git</div>
-                                    <div class="skill-tag">Agile/Scrum</div>
-                                    <div class="skill-tag">Test Driven Dev</div>
-                                    <div class="skill-tag">React</div>
+                                    <div class="skill-tag">Canva</div>
+                                    <div class="skill-tag">Blender</div>
                                 </div>
                             </div>
                         </div>
